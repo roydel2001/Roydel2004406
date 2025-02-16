@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roydel Pottinger - Professional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="professional.html" class="active">Professional</a></li>
+            <li><a href="personality.html">Personality</a></li>
+            <li><a href="development.html">Development</a></li>
+            <li><a href="storyboard.html">Storyboard</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="content-box">
+            <h2>Vision & Mission</h2>
+            <p><strong>Vision:</strong> To become a cybersecurity expert safeguarding critical infrastructure through innovative solutions.</p>
+            <p><strong>Mission:</strong> Master network security protocols and ethical hacking to protect digital ecosystems.</p>
+        </section>
+        <section class="content-box">
+            <h2>Professional Experience</h2>
+            <div class="timeline-item">
+                <h3>National Water Commission</h3>
+                <p class="date">November 2020 - Present</p>
+                <ul>
+                    <li>Managed SQL databases for 10,000+ client accounts</li>
+                    <li>Automated anomaly reporting system using Python</li>
+                    <li>Resolved technical billing errors through data analysis</li>
+                </ul>
+            </div>
+        </section>
+        <section class="content-box">
+            <h2>Education</h2>
+            <ul class="education-list">
+                <li>
+                    <h3>BSc Computer Networking & Security</h3>
+                    <p>University of Technology, Jamaica</p>
+                    <p class="date">2022 - 2027 (Expected)</p>
+                </li>
+                <li>
+                    <h3>CAPE Computer Science</h3>
+                    <p>Wolmer's Boys' School</p>
+                    <p class="date">2019 - 2020</p>
+                </li>
+            </ul>
+        </section>
+        <section class="content-box">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Networking</h3>
+                    <ul>
+                        <li>Network Security</li>
+                        <li>TCP/IP Protocols</li>
+                        <li>Firewall Configuration</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Development</h3>
+                    <ul>
+                        <li>Python Scripting</li>
+                        <li>SQL Databases</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const boxes = document.querySelectorAll('.content-box');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        boxes.forEach(box => observer.observe(box));
+    </script>
+</body>
+</html>

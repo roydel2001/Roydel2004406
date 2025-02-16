@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roydel Pottinger - Storyboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="professional.html">Professional</a></li>
+            <li><a href="personality.html">Personality</a></li>
+            <li><a href="development.html">Development</a></li>
+            <li><a href="storyboard.html" class="active">Storyboard</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <section class="content-box">
+            <h2>Storyboard Layout</h2>
+            <div class="storyboard-grid">
+                <div class="storyboard-item">
+                    <h3>Home Page</h3>
+                    <img src="../Assets/storyboard-home.png" alt="Home Page Wireframe">
+                    <p>The home page introduces the website with a hero section, profile picture, and navigation bar.</p>
+                </div>
+                <div class="storyboard-item">
+                    <h3>Professional Page</h3>
+                    <img src="../Assets/storyboard-professional.png" alt="Professional Page Wireframe">
+                    <p>The professional page showcases my resume, vision, mission, and technical skills.</p>
+                </div>
+                <div class="storyboard-item">
+                    <h3>Personality Page</h3>
+                    <img src="../Assets/storyboard-personality.png" alt="Personality Page Wireframe">
+                    <p>The personality page highlights my traits, hero, and personality test results.</p>
+                </div>
+                <div class="storyboard-item">
+                    <h3>Development Page</h3>
+                    <img src="../Assets/storyboard-development.png" alt="Development Page Wireframe">
+                    <p>The development page summarizes chapters from <em>Twelve Pillars</em> and reflects on my personal growth.</p>
+                </div>
+                <div class="storyboard-item">
+                    <h3>Storyboard Page</h3>
+                    <img src="../Assets/storyboard-storyboard.png" alt="Storyboard Page Wireframe">
+                    <p>The storyboard page displays the layout and purpose of each webpage.</p>
+                </div>
+                <div class="storyboard-item">
+                    <h3>References Page</h3>
+                    <img src="../Assets/storyboard-references.png" alt="References Page Wireframe">
+                    <p>The references page lists all sources used in the portfolio.</p>
+                </div>
+            </div>
+        </section>
+
+                <section class="content-box">
+            <h2>Theme and Features</h2>
+            <p><strong>Theme:</strong> A clean, professional design with a navy blue and white color scheme, targeting potential employers and academic peers.</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Responsive navigation bar</li>
+                <li>Clickable profile picture with email link</li>
+                <li>Scroll animations for content boxes</li>
+                <li>Responsive Website </li>
+                <li>APA-formatted references</li>
+            </ul>
+        </section>
+
+        
+        <section class="content-box">
+            <h2>GitHub Hosting</h2>
+            <p>This website is hosted on GitHub Pages. You can visit the live site here:</p>
+            <a href="https://roydel2001.github.io/Roydel2004406/" target="_blank" class="github-link">
+                https://roydel2001.github.io/Roydel2004406/
+            </a>
+        </section>
+    </main>
+
+    <script>
+        const boxes = document.querySelectorAll('.content-box');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('visible', entry.isIntersecting);
+            });
+        }, { threshold: 0.1 });
+        boxes.forEach(box => observer.observe(box));
+    </script>
+</body>
+</html>

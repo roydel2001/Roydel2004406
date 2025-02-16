@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roydel Pottinger - Personality</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="professional.html">Professional</a></li>
+            <li><a href="personality.html" class="active">Personality</a></li>
+            <li><a href="development.html">Development</a></li>
+            <li><a href="storyboard.html">Storyboard</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="content-box">
+            <h2>My Strongest Trait: Overthinking</h2>
+            <p>My tendency to overthink impacts my academic life in both positive and negative ways:</p>
+            <ul>
+                <li>✅ <strong>Positive:</strong> I analyze problems deeply, ensuring my coding projects are error-free and optimized.</li>
+                <li>❌ <strong>Negative:</strong> I sometimes spend too much time second-guessing decisions, like debating the best network security approach for hours.</li>
+                <li>⚖️ <strong>Balance:</strong> I’ve learned to channel this trait into thorough research while setting time limits to avoid burnout.</li>
+            </ul>
+        </section>
+        <section class="content-box">
+            <h2>My Hero: Cristiano Ronaldo</h2>
+            <div class="hero-section">
+                <img src="../Assets/ronaldo.png" alt="Cristiano Ronaldo" class="hero-image">
+                <blockquote>
+                    “I never tried to hide the fact that my only goal is to be the best.”<br>
+                    — Cristiano Ronaldo
+                </blockquote>
+            </div>
+            <p>Cristiano Ronaldo is my hero because he proves talent alone isn’t enough—you must outwork everyone. Growing up in poverty in Madeira, he transformed himself into a football legend through relentless discipline. His mindset inspires me to:</p>
+            <ul>
+                <li>Push beyond my limits during late-night coding sessions</li>
+                <li>Embrace failure as part of growth</li>
+                <li>Maintain discipline in my cybersecurity studies</li>
+            </ul>
+        </section>
+        <section class="content-box">
+            <h2>Personality Test Result</h2>
+            <img src="../Assets/personality-test.png" alt="INTP Logician Result">
+            <p>The Keirsey test identified me as a <strong>Logician (INTP)</strong>. This explains my analytical nature and tendency to overthink systems. While the test accurately describes my problem-solving approach, I recognize that real-world cybersecurity requires balancing analysis with timely action.</p>
+        </section>
+    </main>
+    <script>
+        const boxes = document.querySelectorAll('.content-box');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('visible', entry.isIntersecting);
+            });
+        }, { threshold: 0.1 });
+        boxes.forEach(box => observer.observe(box));
+    </script>
+</body>
+</html>
