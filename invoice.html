@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice - HydroGrow Jamaica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">HydroGrow <span>Jamaica</span></div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="invoice.html" class="active">Invoice</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<section class="info-page">
+    <h2>Your Invoice</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price (JMD)</th>
+            </tr>
+        </thead>
+        <tbody id="invoice-body"></tbody>
+        <tfoot>
+            <tr>
+                <td><strong>Subtotal</strong></td>
+                <td id="subtotal">J$0</td>
+            </tr>
+            <tr>
+                <td><strong>Tax (15%)</strong></td>
+                <td id="tax">J$0</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td id="total">J$0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="buttons">
+        <button onclick="clearCart()">Cancel</button>
+        <button onclick="window.location.href='index.html'">Exit</button>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
